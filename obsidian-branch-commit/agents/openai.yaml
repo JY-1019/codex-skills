@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian Branch Commit"
+  short_description: "Obsidian files to reviewed local branches."
+  default_prompt: "Use $obsidian-branch-commit for the Obsidian folder paths I provide."

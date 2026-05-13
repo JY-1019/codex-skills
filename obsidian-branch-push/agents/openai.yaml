@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian Branch Push"
+  short_description: "Obsidian files to reviewed branch/main pushes."
+  default_prompt: "Use $obsidian-branch-push for the Obsidian folder paths I provide."
