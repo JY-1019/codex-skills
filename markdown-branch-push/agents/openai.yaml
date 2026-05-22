@@ -1,0 +1,4 @@
+interface:
+  display_name: "Markdown Branch Push"
+  short_description: "Markdown files to reviewed branch/main pushes."
+  default_prompt: "Use $markdown-branch-push for the Markdown folder paths I provide."

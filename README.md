@@ -4,6 +4,8 @@ Personal Codex skills.
 
 ## Included Skills
 
+- `markdown-branch-push`: Read Markdown requirements from filesystem folders, then branch, review, commit, push, and merge each file.
+- `markdown-branch-commit`: Read Markdown requirements from filesystem folders, then branch, review, and commit each file locally.
 - `obsidian-branch-push`: Retrieve requirements from Obsidian Markdown files, then run the Markdown branch push workflow.
 - `obsidian-branch-commit`: Retrieve requirements from Obsidian Markdown files, then run the Markdown branch commit workflow without pushing.
 
@@ -25,6 +27,12 @@ Each skill must be stored as its own directory directly under that `skills` dire
 
 ```text
 ~/.codex/skills/
+  markdown-branch-push/
+    SKILL.md
+    agents/openai.yaml
+  markdown-branch-commit/
+    SKILL.md
+    agents/openai.yaml
   obsidian-branch-push/
     SKILL.md
     agents/openai.yaml
@@ -40,6 +48,8 @@ Clone this repository, then copy or sync the skill folders into Codex's local sk
 ```bash
 git clone git@github.com:JY-1019/codex-skills.git
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+rsync -a codex-skills/markdown-branch-push/ "${CODEX_HOME:-$HOME/.codex}/skills/markdown-branch-push/"
+rsync -a codex-skills/markdown-branch-commit/ "${CODEX_HOME:-$HOME/.codex}/skills/markdown-branch-commit/"
 rsync -a codex-skills/obsidian-branch-push/ "${CODEX_HOME:-$HOME/.codex}/skills/obsidian-branch-push/"
 rsync -a codex-skills/obsidian-branch-commit/ "${CODEX_HOME:-$HOME/.codex}/skills/obsidian-branch-commit/"
 ```
@@ -48,6 +58,8 @@ You can also keep them linked instead of copied:
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+ln -sfn "$PWD/codex-skills/markdown-branch-push" "${CODEX_HOME:-$HOME/.codex}/skills/markdown-branch-push"
+ln -sfn "$PWD/codex-skills/markdown-branch-commit" "${CODEX_HOME:-$HOME/.codex}/skills/markdown-branch-commit"
 ln -sfn "$PWD/codex-skills/obsidian-branch-push" "${CODEX_HOME:-$HOME/.codex}/skills/obsidian-branch-push"
 ln -sfn "$PWD/codex-skills/obsidian-branch-commit" "${CODEX_HOME:-$HOME/.codex}/skills/obsidian-branch-commit"
 ```

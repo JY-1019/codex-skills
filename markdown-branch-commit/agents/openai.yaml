@@ -1,0 +1,4 @@
+interface:
+  display_name: "Markdown Branch Commit"
+  short_description: "Markdown files to reviewed local branches."
+  default_prompt: "Use $markdown-branch-commit for the Markdown folder paths I provide."
