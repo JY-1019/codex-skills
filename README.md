@@ -4,8 +4,8 @@ Personal Codex skills.
 
 ## Included Skills
 
-- `obsidian-branch-push`: Run an Obsidian-driven implementation workflow, push each file branch, then merge/push `main`.
-- `obsidian-branch-commit`: Run the same Obsidian-driven workflow, but keep each file branch committed locally without pushing.
+- `obsidian-branch-push`: Retrieve requirements from Obsidian Markdown files, then run the Markdown branch push workflow.
+- `obsidian-branch-commit`: Retrieve requirements from Obsidian Markdown files, then run the Markdown branch commit workflow without pushing.
 
 ## Local Codex Install Location
 
